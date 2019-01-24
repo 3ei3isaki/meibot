@@ -1,15 +1,23 @@
 {
-  "name": "meibot",
+  "name": "ricchan",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Mei Misaki",
+  "author": "meimisaki",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
-    "sqlite3": "^4.0.6"
+    "discord.js": "^11.3.2",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "facebook-chat-api": "^1.6.0",
+    "movie-info": "^2.0.4",
+    "nekos.life": "^1.1.4",
+    "node-url-shortener": "^1.0.1",
+    "nodemon": "^1.18.3",
+    "weather-js": "^2.0.0",
+    "x-ray": "^2.3.3"
   }
 }

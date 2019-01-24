@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>_meiMisaki</title>
+  <link rel="icon" href="./resources/img/Icon.png">
+  <script id='ytapi' src="https://www.youtube.com/player_api"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./resources/js/profile.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&amp;subset=vietnamese" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./resources/css/keyframe.css">
+  <link rel="stylesheet" href="./resources/css/styles.css">
+  <link rel="stylesheet" href="./resources/css/profile.css">
+</head>
+
+<body>
+  <header class="_header_main">
+    <nav class="_header_nav">
+      <i id="_header_nav_icon" class="fas fa-snowflake"></i><span>3ei3isaki</span>
+      <a href="https://www.facebook.com/3ei3isaki" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://discord.gg/ddkBM4W" target="_blank"><i class="fab fa-discord"></i></a>
+    </nav>
+    <div class="_header_info">
+      <img class="_header_info_avatar" src="resources/img/Avatar.png" alt="Avatar.png">
+      <h1 class="_header_info_name">Mei Misaki</h1>
+    </div>
+    <div class="_header_img">
+      <img id="_header_img_1" class="_header_img_img" src="./resources/img/Anime_Girl.png" alt="Anime_Girl.png">
+      <img id="_header_img_2" class="_header_img_img" src="./resources/img/Anime_Girl_2.png" alt="Anime_Girl_2.png">
+    </div>
+  </header>
+
+  <nav id="view">
+
+    <div id="nav_view">
+      <h3>jumpTo</h3>
+      <br>
+      <hr>
+      <a href="#_main_neko">
+        <div class="view_title">Neko</div>
+      </a>
+      <a href="#_yt_Play">
+        <div class="view_title">Youtube Play</div>
+      </a>
+    </div>
+  </nav>
+
+  <div class="_main">
+    <section id="_main_neko">
+      <h2 class="_main_title"><i class="fas fa-code"></i> Neko</h2>
+      <hr>
+      <div id="_main_neko_img">
+        <img id="_ajax_loader" src="./resources/img/ajax-loader.gif" alt="ajax-Load">
+        <img id="_ajax_loader_err" src="./resources/img/err.png" alt="ajax-Load">
+        <img id="_main_neko_img_img" src="./resources/img/err.png" alt="_Neko_Error!">
+      </div>
+      <div id="_neko_choose">
+        <div id="_neko_type">
+          <label class="_radio_btn"><input type="radio" name="neko" value="hug"><span>Hug</span></label>
+          <label class="_radio_btn"><input type="radio" name="neko" value="baka"><span>Baka</span></label>
+          <label class="_radio_btn"><input type="radio" name="neko" value="meow"><span>Meow</span></label>
+          <label class="_radio_btn"><input type="radio" name="neko" value="smug"><span>Smug</span></label>
+          <label class="_radio_btn"><input type="radio" name="neko" value="slap"><span>Slap</span></label>
+          <label class="_radio_btn"><input type="radio" name="neko" value="pat"><span>Pat</span></label>
+          <label class="_radio_btn"><input type="radio" name="neko" value="neko" checked><span>Neko</span></label>
+          <label class="_radio_btn"><input type="radio" name="neko" value="nekogif"><span>Neko.Gif</span></label>
+          <label class="_radio_btn"><input type="radio" name="neko" value="foxgirl"><span>Fox Girl</span></label>
+          <label class="_radio_btn"><input type="radio" name="neko" value="feed"><span>Feed</span></label>
+          <label class="_radio_btn"><input type="radio" name="neko" value="cuddle"><span>Cuddle</span></label>
+          <label class="_radio_btn"><input type="radio" name="neko" value="kemonomimi"><span>Kemonomimi</span></label>
+          <label class="_radio_btn"><input type="radio" name="neko" value="holo"><span>Holo</span></label>
+          <label class="_radio_btn"><input type="radio" name="neko" value="kiss"><span>Kiss</span></label>
+        </div>
+        <button class="_btn" id="_neko_next" type="button" name="neko">Get Img!</button>
+        <a id="_neko_open_url" href="./resources/img/err.png" target="_blank"><button class="_btn" id="_neko_open" type="button"
+            name="neko">Open in new tab!</button></a>
+        <span class="_btn" id="_neko_text">Waiting...</span>
+        <pre id="_neko_log"></pre>
+      </div>
+    </section>
+    <hr>
+    <section id="_yt_Play">
+      <h2 class="_main_title"><i class="fas fa-code"></i> Youtube Play~</h2>
+      <hr>
+      <iframe id="ytEmbed" src="https://www.youtube.com/embed/86jRi9goYLQ?&enablejsapi=1&html5=1&showinfo=0&autoplay=1"
+        allowfullscreen></iframe>
+      <div id="stt">
+        <button class="_btn" id="btn_stt" type="button" name="button">...</button>
+        <div id="playlist">
+          <label class="_radio_btn playlist"><input type="radio" name="playlist" value="piano"><span>Piano</span></label>
+          <label class="_radio_btn playlist"><input type="radio" name="playlist" value="piano"><span>Piano</span></label>
+          <label class="_radio_btn playlist"><input type="radio" name="playlist" value="piano"><span>Piano</span></label>
+          <label class="_radio_btn playlist"><input type="radio" name="playlist" value="piano"><span>Piano</span></label>
+          <label class="_radio_btn playlist"><input type="radio" name="playlist" value="piano"><span>Piano</span></label>
+          <label class="_radio_btn playlist"><input type="radio" name="playlist" value="piano"><span>Piano</span></label>
+          <label class="_radio_btn playlist"><input type="radio" name="playlist" value="piano"><span>Piano</span></label>
+          <label class="_radio_btn playlist"><input type="radio" name="playlist" value="piano"><span>Piano</span></label>
+          <label class="_radio_btn playlist"><input type="radio" name="playlist" value="piano"><span>Piano</span></label>
+          <label class="_radio_btn playlist"><input type="radio" name="playlist" value="piano"><span>Piano</span></label>
+          <label class="_radio_btn playlist"><input type="radio" name="playlist" value="piano"><span>Piano</span></label>
+          <label class="_radio_btn playlist"><input type="radio" name="playlist" value="piano"><span>Piano</span></label>
+          <label class="_radio_btn playlist"><input type="radio" name="playlist" value="piano"><span>Piano</span></label>
+          <label class="_radio_btn playlist"><input type="radio" name="playlist" value="piano"><span>Piano</span></label>
+        </div>
+        <div id="stt_choose">
+          <button class="_btn btn_choose" id="btn_choose" type="button" name="button">Start!</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <h3 style="margin-top: 30px;text-align: center;color: white;"> ❤ ❤ ❤ </h3>
+  </footer>
+</body>
+
+</html>

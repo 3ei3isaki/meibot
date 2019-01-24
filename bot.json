@@ -1,0 +1,34 @@
+{
+  "token": "NDYzNTk3OTU5OTQ3MjIzMDQw.DwfDIQ.aUcEk5tdqEcFy61LdADEM_AmRb8",
+  "webhook": {
+    "statusHook":{
+      "token": "3U1tPHeqJUSO162eOeM1M0mGx8ce-_uIF-qxZtKL6lWf8DM1Q8EcnFHzolQqJsEBVnK6",
+      "id": "528499352541462539"
+    },
+    "logHook":{
+      "token": "apiMnc47sxvZIsU_sExhb6YLW54yGgLH8-xz1dY3VPBeZGGi3iaWPeMczK82ySmtUtv1",
+      "id": "529219280059891712"
+    },
+    "welcomeHook":{
+      "token": "Xvfh2RHzyS9yKa0kjr-IMHg0IbXZCPxKEhOrhPwzBrmTkgGLw8c_jt1ONU00NGzQhcH0",
+      "id": "529220685608910858"
+    },
+    "errHook":{
+      "token": "LKeyVzbD5A-G8y0zB-iLCHVB2AZB8RjTlnid4nf9DuQFngZ3zIO4erMdVrkPeIINqlEW",
+      "id": "529219725595770880"
+    }
+  },
+  "prefix": "e:",
+  "myID": "230716036939382784",
+  "color": {
+    "notifi": "0xa0fff9",
+    "red": "0xff6d6d",
+    "green": "0x6dff98",
+    "gray": "0x686868",
+    "yellow": "0xffff89",
+    "nor": "0xffa0fd"
+  },
+  "img": {
+    "err": "https://media1.tenor.com/images/3a0c9909b542717ce9f651d07c4d4592/tenor.gif"
+  }
+}

@@ -1,0 +1,17 @@
+module.exports = function(message, discord, bot,) {
+    const helpEmbed = new discord.RichEmbed()
+    .setThumbnail('https://media1.tenor.com/images/21515181b13a4dd39202662ebd50e558/tenor.gif')
+    .addField(`:snowflake: Help Command!`,`● Cách dùng lệnh: <**Prefix** + **Command**>\n● Prefix hiện tại: **${bot.prefix}**\n*Auto Del Mgs: Thêm !e trước tin nhắn cần xóa\n────────────────────`,false)
+    .addField(`:one: ${bot.prefix}Help`,`➠ Lệnh trợ giúp\n────────────────────`,false)
+    .addField(`:two: ${bot.prefix}Uptime`,`➠ Thời gian BOT đã hoạt động!\n────────────────────`,false)
+    .addField(`:three: ${bot.prefix}Ping`,`➠ Kiểm tra Ping!\n────────────────────`,false)
+    .addField(`:four: ${bot.prefix}Info:<Name>`,`➠ Xem Info\n➠ Các Info hiện có: **Mei**\n**VD**: **e:Info:Mei**\n────────────────────`,false)
+    .addField(`:five: ${bot.prefix}Weather`,`➠ Xem thông tin thời tiết ở TP.HCM\n────────────────────`,false)
+    .addField(`:six: ${bot.prefix}Neko:<Type>`,`➠ Lấy hình ảnh các kiểu <3\n#Các loại hình ảnh **Type**\n + **Smug**  <=>  **Tự mãn**\n + **Bakayarou**  <=>  **OcsChos**\n + **Huggg**  <=>  **Ôm thui mà**\n + **Meow**  <=>  **Hình con mều RealLife**\n + **Slap**  <=>  **Ăn Tát**\n + **Pat**  <=>  **Xoa, vỗ đầu ><**\n + **Neko**  <=>  **Hình các bé mều trong Anime**\n + **NekoGif**  <=>  **Giống Neko nhưng mà là ảnh Gif**\n + **FoxGirl**  <=>  **Giống Neko nhưng mà là mấy bé cáo**\n + **Feed**  <=>  **Đơn giản là cho ăn :D**\n + **Cuddle**  <=>  **cũng là ôm nhưng ... ko biết diễn ta sao đây thử đi rùi bít Ahihi**\n + **Cattext**  <=>  **Kí tự mều ý mà ~**\n + **Kemonomimi**  <=>  **À thì nó là Kemonomimi :D**\n + **Holo**  <=>  **Ai coi Spice and Wolf thì chắc biết rù XD**\n + **Tickle**  <=>  **Chọt lét ý mà nghe ba chấm ghê :)**\n + **Kiss**  <=>  **Tụi bây biết nó nghĩa là gì mà :))**\n**VD**: **e:Neko:NekoGif**\n────────────────────`,false)
+ 	  .addField(`:seven: ${bot.prefix}Movie:<Name film>`,`➠ Tìm một phim (Movie) nào đó từ trang **themoviedb.org**\n────────────────────`,false)
+    .addField(`:eight: ${bot.prefix}TDT`,`➠ Xem 4 thông báo trên cùng của TDT\n────────────────────`,false)
+    .addField(`:nine: ${bot.prefix}sUrl:(URL cần rút gọn)`,`➠ Rút gọn URL\n**● Lưu ý:** URL phải bỏ trong cặp dấu **()** nếu sử dụng lệnh mà ko thấy phản hồi thì có nghĩa là Link sai hoặc cú pháp ko đúng ...\n**VD**: **e:sUrl:(https://www.youtube.com/watch?v=xnQ1CZLt3NY)**\n────────────────────`,false)
+    .addField(`:one::zero: ${bot.prefix}AnimeNew`,`➠ Xem các anime mới cập nhật từ **Animehay.Tv**\n────────────────────`,false)
+    .setColor(`0x80c7d0`)
+    message.channel.send(helpEmbed)
+}

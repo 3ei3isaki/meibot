@@ -1,0 +1,43 @@
+@keyframes _nhap_Nhay {
+  0% {
+    color: rgb(233, 129, 117);
+  }
+
+  25% {
+    color: rgb(181, 207, 198);
+  }
+
+  50% {
+    color: rgb(233, 129, 117);
+  }
+
+  75% {
+    color: rgb(181, 207, 198);
+  }
+
+  100% {
+    color: rgb(233, 129, 117);
+  }
+}
+
+@keyframes _vien_nhap_Nhay {
+  0% {
+    border-color: rgba(250, 255, 0, 1);
+  }
+
+  25% {
+    border-color: rgba(255, 0, 207, 1);
+  }
+
+  50% {
+    border-color: rgba(243, 255, 111, 0.99);
+  }
+
+  75% {
+    border-color: rgba(0, 255, 110, 1);
+  }
+
+  100% {
+    border-color: rgba(250, 255, 0, 1);
+  }
+}
