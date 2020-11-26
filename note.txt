@@ -1,0 +1,25 @@
+server
+     id: xxxxxxxxxxxxxxxxx,
+     config: {
+          log: {
+               on: false
+               idChannel: null
+          },
+          welcome: {
+               on: false
+               msg: "Welcome {user} to channel"
+          }
+     },
+     anime_notification: {
+          on: false,
+          last_post: null,
+          data: []
+     },
+     tdt_notification: {
+          on: false,
+          last_post: null,
+          data: []
+     },
+     user: {
+
+     }

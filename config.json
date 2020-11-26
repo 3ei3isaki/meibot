@@ -1,0 +1,15 @@
+{
+     "prefix": "e:",
+     "myID": "230716036939382784",
+     "color": {
+          "notifi": "0xa0fff9",
+          "red": "0xff6d6d",
+          "green": "0x6dff98",
+          "gray": "0x686868",
+          "yellow": "0xffff89",
+          "nor": "0xffa0fd"
+     },
+     "img": {
+          "err": "https://media1.tenor.com/images/3a0c9909b542717ce9f651d07c4d4592/tenor.gif"
+     }
+}
