@@ -1,9 +1,10 @@
-const Discord = require('discord.js');
+const discord = require('discord.js');
+const nekoClient = require('nekos.life');
+const neko = new nekoClient();
 
-exports.run = function (message, discord, neko, Args) {
-
-     if (Args[2] == 'huggg') {
-          neko.getSFWHug().then(img => {
+exports.run = function (client, message, args) {
+     if (args[0] == 'huggg') {
+          neko.sfw.hug().then(img => {
                const nekoEmbed = new discord.MessageEmbed()
                     .addField(':snowflake: Neko Command', `➠ Nyan~ Nyan~ Meow~ Meow~`, false)
                     .setTitle('--- > Link < --- Ôm Ôm Hugggggg ><')
@@ -14,8 +15,8 @@ exports.run = function (message, discord, neko, Args) {
                message.channel.send(nekoEmbed)
           })
           return;
-     } else if (Args[2] == 'bakayarou') {
-          neko.getSFWBaka().then(img => {
+     } else if (args[0] == 'bakayarou') {
+          neko.sfw.baka().then(img => {
                const nekoEmbed = new discord.MessageEmbed()
                     .addField(':snowflake: Neko Command', '➠ Nyan~ Nyan~ Meow~ Meow~', false)
                     .setTitle('--- > Link < --- Urusai Urusai!!!!!!!!!!!')
@@ -26,8 +27,8 @@ exports.run = function (message, discord, neko, Args) {
                message.channel.send(nekoEmbed)
           })
           return;
-     } else if (Args[2] == 'meow') {
-          neko.getSFWMeow().then(img => {
+     } else if (args[0] == 'meow') {
+          neko.sfw.meow().then(img => {
                const nekoEmbed = new discord.MessageEmbed()
                     .addField(':snowflake: Neko Command', '➠ Nyan~ Nyan~ Meow~ Meow~', false)
                     .setTitle('--- > Link < --- Nyaaaaaaaaaaaa~~~~~~~~~~~')
@@ -38,8 +39,8 @@ exports.run = function (message, discord, neko, Args) {
                message.channel.send(nekoEmbed)
           })
           return;
-     } else if (Args[2] == 'smug') {
-          neko.getSFWSmug().then(img => {
+     } else if (args[0] == 'smug') {
+          neko.sfw.smug().then(img => {
                const nekoEmbed = new discord.MessageEmbed()
                     .addField(':snowflake: Neko Command', '➠ Nyan~ Nyan~ Meow~ Meow~', false)
                     .setTitle('--- > Link < --- Tự mãn ><')
@@ -50,8 +51,8 @@ exports.run = function (message, discord, neko, Args) {
                message.channel.send(nekoEmbed)
           })
           return;
-     } else if (Args[2] == 'slap') {
-          neko.getSFWSlap().then(img => {
+     } else if (args[0] == 'slap') {
+          neko.sfw.slap().then(img => {
                const nekoEmbed = new discord.MessageEmbed()
                     .addField(':snowflake: Neko Command', '➠ Nyan~ Nyan~ Meow~ Meow~', false)
                     .setTitle('--- > Link < --- Tát lật mặt giờ :>')
@@ -62,8 +63,8 @@ exports.run = function (message, discord, neko, Args) {
                message.channel.send(nekoEmbed)
           })
           return;
-     } else if (Args[2] == 'pat') {
-          neko.getSFWPat().then(img => {
+     } else if (args[0] == 'pat') {
+          neko.sfw.pat().then(img => {
                const nekoEmbed = new discord.MessageEmbed()
                     .addField(':snowflake: Neko Command', '➠ Nyan~ Nyan~ Meow~ Meow~', false)
                     .setTitle('--- > Link < --- Xoa xoa vỗ vỗ :>')
@@ -74,8 +75,8 @@ exports.run = function (message, discord, neko, Args) {
                message.channel.send(nekoEmbed)
           })
           return;
-     } else if (Args[2] == 'neko') {
-          neko.getSFWNeko().then(img => {
+     } else if (args[0] == 'neko') {
+          neko.sfw.neko().then(img => {
                const nekoEmbed = new discord.MessageEmbed()
                     .addField(':snowflake: Neko Command', '➠ Nyan~ Nyan~ Meow~ Meow~', false)
                     .setTitle('--- > Link < --- Mều')
@@ -86,8 +87,8 @@ exports.run = function (message, discord, neko, Args) {
                message.channel.send(nekoEmbed)
           })
           return;
-     } else if (Args[2] == 'nekogif') {
-          neko.getSFWNekoGif().then(img => {
+     } else if (args[0] == 'nekogif') {
+          neko.sfw.nekoGif().then(img => {
                const nekoEmbed = new discord.MessageEmbed()
                     .addField(':snowflake: Neko Command', '➠ Nyan~ Nyan~ Meow~ Meow~', false)
                     .setTitle('--- > Link < --- Mều Gif')
@@ -98,8 +99,8 @@ exports.run = function (message, discord, neko, Args) {
                message.channel.send(nekoEmbed)
           })
           return;
-     } else if (Args[2] == 'foxgirl') {
-          neko.getSFWFoxGirl().then(img => {
+     } else if (args[0] == 'foxgirl') {
+          neko.sfw.foxGirl().then(img => {
                const nekoEmbed = new discord.MessageEmbed()
                     .addField(':snowflake: Neko Command', '➠ Nyan~ Nyan~ Meow~ Meow~', false)
                     .setTitle('--- > Link < --- <3 <3')
@@ -110,8 +111,8 @@ exports.run = function (message, discord, neko, Args) {
                message.channel.send(nekoEmbed)
           })
           return;
-     } else if (Args[2] == 'feed') {
-          neko.getSFWFeed().then(img => {
+     } else if (args[0] == 'feed') {
+          neko.sfw.feed().then(img => {
                const nekoEmbed = new discord.MessageEmbed()
                     .addField(':snowflake: Neko Command', '➠ Nyan~ Nyan~ Meow~ Meow~', false)
                     .setTitle('--- > Link < --- <3 <3')
@@ -122,8 +123,8 @@ exports.run = function (message, discord, neko, Args) {
                message.channel.send(nekoEmbed)
           })
           return;
-     } else if (Args[2] == 'cuddle') {
-          neko.getSFWCuddle().then(img => {
+     } else if (args[0] == 'cuddle') {
+          neko.sfw.cuddle().then(img => {
                const nekoEmbed = new discord.MessageEmbed()
                     .addField(':snowflake: Neko Command', '➠ Nyan~ Nyan~ Meow~ Meow~', false)
                     .setTitle('--- > Link < --- <3 <3')
@@ -134,8 +135,8 @@ exports.run = function (message, discord, neko, Args) {
                message.channel.send(nekoEmbed)
           })
           return;
-     } else if (Args[2] == 'cattext') {
-          neko.getSFWCatText().then(img => {
+     } else if (args[0] == 'cattext') {
+          neko.sfw.catText().then(img => {
                const nekoEmbed = new discord.MessageEmbed()
                     .addField(':snowflake: Neko Command', '➠ Nyan~ Nyan~ Meow~ Meow~', false)
                     .setTitle(img.cat)
@@ -143,8 +144,8 @@ exports.run = function (message, discord, neko, Args) {
                message.channel.send(nekoEmbed)
           })
           return;
-     } else if (Args[2] == 'kemonomimi') {
-          neko.getSFWKemonomimi().then(img => {
+     } else if (args[0] == 'kemonomimi') {
+          neko.sfw.kemonomimi().then(img => {
                const nekoEmbed = new discord.MessageEmbed()
                     .addField(':snowflake: Neko Command', '➠ Nyan~ Nyan~ Meow~ Meow~', false)
                     .setTitle('--- > Link < --- <3 <3')
@@ -155,8 +156,8 @@ exports.run = function (message, discord, neko, Args) {
                message.channel.send(nekoEmbed)
           })
           return;
-     } else if (Args[2] == 'holo') {
-          neko.getSFWHolo().then(img => {
+     } else if (args[0] == 'holo') {
+          neko.sfw.holo().then(img => {
                const nekoEmbed = new discord.MessageEmbed()
                     .addField(':snowflake: Neko Command', '➠ Nyan~ Nyan~ Meow~ Meow~', false)
                     .setTitle('--- > Link < --- <3 <3')
@@ -167,8 +168,8 @@ exports.run = function (message, discord, neko, Args) {
                message.channel.send(nekoEmbed)
           })
           return;
-     } else if (Args[2] == 'tickle') {
-          neko.getSFWTickle().then(img => {
+     } else if (args[0] == 'tickle') {
+          neko.sfw.tickle().then(img => {
                const nekoEmbed = new discord.MessageEmbed()
                     .addField(':snowflake: Neko Command', '➠ Nyan~ Nyan~ Meow~ Meow~', false)
                     .setTitle('--- > Link < --- XD')
@@ -179,10 +180,21 @@ exports.run = function (message, discord, neko, Args) {
                message.channel.send(nekoEmbed)
           })
           return;
-     } else if (Args[2] == 'kiss') {
-          neko.getSFWKiss().then(img => {
+     } else if (args[0] == 'kiss') {
+          neko.sfw.kiss().then(img => {
                const nekoEmbed = new discord.MessageEmbed()
                     .addField(':snowflake: Neko Command', '➠ Nyan~ Nyan~ Meow~ Meow~', false)
+                    .setTitle('--- > Link < --- Chụt!! (つ ◕_◕ )つ')
+                    .setURL(img.url)
+                    .setImage(img.url)
+                    .setThumbnail('https://media1.tenor.com/images/21515181b13a4dd39202662ebd50e558/tenor.gif')
+               message.channel.send(nekoEmbed)
+          })
+          return;
+     } else if (args[0] == 'nsfw-neko') {
+          neko.nsfw.neko().then(img => {
+               const nekoEmbed = new discord.MessageEmbed()
+                    .addField(':snowflake: NSFW Neko Hentai Command', '➠ Nyan~ Nyan~ Meow~ Meow~', false)
                     .setTitle('--- > Link < --- Chụt!! (つ ◕_◕ )つ')
                     .setURL(img.url)
                     .setImage(img.url)

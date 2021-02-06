@@ -1,14 +1,20 @@
-const Discord = require('discord.js');
+const discord = require('discord.js');
+const sUrl = require('node-url-shortener');
 
-exports.run = function (message, discord, argsLink, sUrl) {
+exports.run = function (client, message) {
 
-     sUrl.short(argsLink, function (err, url) {
+     let args = message.content.slice(client.config.prefix.length).trim().split(/:+/g);
+     args.shift();
+     args = args.join(':');
+     let end = args.lastIndexOf(')'), start = args.indexOf('(') + 1;
+     args = args.slice(start, end);
+
+     sUrl.short(args, function (err, url) {
           const shortUrlEmbed = new discord.MessageEmbed()
-               .addField(':snowflake: shortUrl Command', `Link được rút gọn thành công XD!\n➠ ${url}\nLink gốc!\n➠ ${argsLink}`, false)
+               .addField(':snowflake: shortUrl Command', `Link được rút gọn thành công XD!\n➠ ${url}\nLink gốc!\n➠ ${args}`, false)
                .setColor('0x80c7d0')
-               .setThumbnail('https://is.gd/isgdlogo.jpg')
                .setTitle('Nhấn vào để tự tay rút gọn Link ...')
-               .setURL('https://is.gd/')
+               .setURL('https://cdpt.in/')
           message.channel.send(shortUrlEmbed)
      })
 }

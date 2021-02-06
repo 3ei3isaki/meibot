@@ -46,13 +46,13 @@ module.exports = {
           ,
 
           ping: (
-               msgCreatedTimestamp,
+               msgPing,
                color = '0x80c7d0',
                thumbnailURL = 'https://media1.tenor.com/images/19b2209d5d6a299c0f4cc252c983e866/tenor.gif'
           ) => new Discord.MessageEmbed()
                .addField(
                     ':snowflake: Ping Command',
-                    `> Pong ${(Date.now() - msgCreatedTimestamp) / 1000}s`,
+                    `> Pong ${msgPing/1000}s`,
                     false
                )
                .setColor(color)

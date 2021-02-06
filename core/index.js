@@ -3,6 +3,7 @@ const fs = require("fs");
 const Enmap = require("enmap");
 const chalk = require('chalk');
 const path = require('path');
+const database = require('./database');
 
 function loadEvent(client) {
      fs.readdir("./events/", (err, files) => {
@@ -63,6 +64,8 @@ function initFirebase(client) {
           }),
           databaseURL: process.env.FIREBASE_DATABASE_URL,
      });
+
+     client.db = new database(firebase.database());
 
      console.timeEnd(`${chalk.bgGreen.black('> Loading Database Done')}`);
 }
